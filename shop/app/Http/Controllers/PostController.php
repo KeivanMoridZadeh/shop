@@ -13,8 +13,8 @@ class PostController extends Controller
         return view('Posts.posts');
     }
     public function show(Post $post){
-        dd($post);
-        return view('Posts.view');
+
+        return view('Posts.view',compact('post'));
     }
     public function store(Request $request){
             $this->validate($request,[
@@ -30,5 +30,10 @@ class PostController extends Controller
         ]);
         return redirect()->route('posts');
 
+    }
+    public function destroy(Post $post){
+        $this->authorize('delete',$post);
+        $post->delete();
+        return back();
     }
 }

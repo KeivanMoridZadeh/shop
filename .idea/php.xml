@@ -114,6 +114,8 @@
       <path value="$PROJECT_DIR$/shop/vendor/sebastian/complexity" />
       <path value="$PROJECT_DIR$/shop/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/shop/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/shop/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/shop/vendor/barryvdh/laravel-debugbar" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

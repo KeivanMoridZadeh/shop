@@ -24,12 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-
-        $test = post::all();
+        //using pagination to show only 3 records in one page
+        $test = post::paginate(3);
 
         return view('Posts.home',compact('test'));
-        //        dd($test[1]->body);
-//        return view('Posts.home',['type'=>'bad']);
+
 
 
 

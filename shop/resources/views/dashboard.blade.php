@@ -25,7 +25,6 @@
                                 <div class="d-flex  justify-content-between align-items-center">
                                     <div class="btn-group ">
                                         <button type="button" class="btn btn-sm btn-outline-secondary"><a class="text-secondary" href="{{ route('login') }}">view</a></button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
 
                                     </div>
                                     <small class="text-muted">9 mins</small>
@@ -34,6 +33,7 @@
                         </div>
                     </div>
                 @endforeach
+                {{ $user_data->links() }}
             </div>
         </div>
     </div>
